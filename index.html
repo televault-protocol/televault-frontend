@@ -4,7 +4,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-</style></head><body class="body"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="container w-container"><a href="index.html#" class="brand w-nav-brand"><img src="https://cdn.prod.website-files.com/66e67a4cc40e1bbd3ff60b7c/66e7ededea3a5299026b6d21_Televault%20Full%20Logo%20White%20Small.png" loading="lazy" alt="Televault logo" class="image"/></a><nav role="navigation" class="w-nav-menu"><a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">Bridge</a><a href="redeem.html" class="nav-link-2 w-nav-link">Redeem</a><a href="https://sol.televault.io" target="_blank" class="nav-link-3 w-nav-link">Solana</a><a href="https://docs.televault.xyz/" target="_blank" class="nav-link-3 w-nav-link">Docs</a><a id="btn-connect" href="index.html#" class="button-nav w-button">Connect Wallet</a></nav><div class="w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div><div class="global-styles w-embed"><style>
+</style></head><body class="body"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="container w-container"><a href="index.html#" class="brand w-nav-brand"><img src="https://cdn.prod.website-files.com/66e67a4cc40e1bbd3ff60b7c/66e7ededea3a5299026b6d21_Televault%20Full%20Logo%20White%20Small.png" loading="lazy" alt="Televault logo" class="image"/></a><nav role="navigation" class="w-nav-menu"><a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">Bridge</a><a href="redeem.html" class="nav-link-2 w-nav-link">Redeem</a><a href="https://sol.televaultbridge.com" target="_blank" class="nav-link-3 w-nav-link">Solana</a><a href="https://docs.televault.xyz/" target="_blank" class="nav-link-3 w-nav-link">Docs</a><a id="btn-connect" href="index.html#" class="button-nav w-button">Connect Wallet</a></nav><div class="w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div><div class="global-styles w-embed"><style>
 
 /* Snippet gets rid of top margin on first element in any rich text*/
 .w-richtext>:first-child {
@@ -165,7 +165,7 @@ window.addEventListener('DOMContentLoaded', () => {
 function getVaults() {
 		vaultsButton.removeEventListener('click', getVaults)
 
-    let apiUrl = new URL('https://api.televault.io/');
+    let apiUrl = new URL('https://api.televaultbridge.com/');
     
     let request = new XMLHttpRequest();
 
@@ -305,7 +305,7 @@ async function signAttestation() {
 
 function getAppraisal() {
 
-  let apiUrl = new URL('https://api.televault.io/');
+  let apiUrl = new URL('https://api.televaultbridge.com/');
     
   let appraisal_request = new XMLHttpRequest();
 
@@ -345,7 +345,7 @@ async function televault() {
 
     let refresh_request = new XMLHttpRequest();
 
-    apiUrl = new URL('https://api.televault.io/');
+    apiUrl = new URL('https://api.televaultbridge.com/');
     
     let url = apiUrl.toString() + 'refresh/' + selectedTokenId;
     
